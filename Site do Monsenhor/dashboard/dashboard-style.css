@@ -1,0 +1,243 @@
+/* dashboard-style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Cor de fundo leve */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Evita rolagem da página */
+}
+
+header {
+    background-color: #005f99; /* Azul escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.user-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#user-name {
+    font-weight: bold;
+}
+
+#logout-icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%; /* Preenche toda a largura */
+}
+
+.school-info {
+    display: flex;
+    justify-content: space-between; /* Use space-between para espaçar */
+    align-items: center;
+    gap: 20px; /* Reduzido para mais compactação */
+    background-color: #e3f2fd; /* Faixa horizontal azul clara */
+    padding: 20px;
+    width: 90%; /* Aumenta a largura do contêiner */
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.school-photo img {
+    width: 50%; /* Aumenta a imagem para 50% do contêiner */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.school-details {
+    text-align: left;
+    width: 40%; /* Define uma largura específica */
+}
+
+.school-details h2 {
+    color: #005f99; /* Azul escuro */
+    margin-bottom: 10px;
+}
+
+.school-details p {
+    margin: 10px 0;
+}
+
+.map iframe {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+h2 {
+    color: #005f99; /* Azul escuro */
+    margin-bottom: 30px;
+}
+
+.options-highlight {
+    position: relative; /* Para posicionamento absoluto do background */
+    padding: 20px; /* Espaço interno da faixa */
+    margin-bottom: 20px; /* Espaço abaixo da faixa */
+}
+
+.carousel-background {
+    background-color: #e3f2fd; /* Cor de fundo da faixa */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a faixa */
+    padding: 20px; /* Espaço interno da faixa */
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+    width: 100%; /* Preenche toda a largura do carrossel */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #007acc; /* Azul */
+    color: white;
+    border-radius: 10px;
+    width: 180px; /* Ajuste conforme necessário */
+    height: 180px; /* Ajuste conforme necessário */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #005f99; /* Azul mais escuro ao passar o mouse */
+}
+
+.menu-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.carousel-button {
+    background-color: #005f99; /* Azul escuro */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: #004477; /* Azul ainda mais escuro ao passar o mouse */
+}
+
+footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #005f99; /* Azul escuro */
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* dashboard-style.css */
+.carousel-background {
+    background-color: #e3f2fd; /* Cor de fundo da faixa */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a faixa */
+    padding: 20px; /* Espaço interno da faixa */
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Para posicionamento absoluto dos botões */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animação suave */
+    width: max-content; /* Permite que a largura se ajuste ao conteúdo */
+}
+
+.carousel-button {
+    background-color: #005f99; /* Azul escuro */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1; /* Coloca os botões acima dos outros elementos */
+}
+
+.carousel-button.left {
+    position: absolute; /* Posiciona as setas à esquerda */
+    left: 10px; /* Ajuste a posição */
+}
+
+.carousel-button.right {
+    position: absolute; /* Posiciona as setas à direita */
+    right: 10px; /* Ajuste a posição */
+}
+
+.carousel-button:hover {
+    background-color: #004477; /* Azul ainda mais escuro ao passar o mouse */
+}
+
+.school-photo img {
+    width: 100%; /* Aumente a largura conforme necessário, por exemplo, 100% */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 600px; /* Ajuste o máximo que a imagem pode ter */
+    border-radius: 10px; /* Para bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

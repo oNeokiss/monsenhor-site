@@ -1,0 +1,82 @@
+/* login-style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a2c2e0, #6a98c0); /* Gradiente de fundo azul */
+    height: 100vh; /* Altura total da viewport */
+    display: flex; 
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+header {
+    background-color: #005f99; /* Cor de fundo do cabeçalho azul escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px 10px 0 0; /* Cantos arredondados no topo */
+}
+
+main {
+    background-color: white;
+    padding: 60px; /* Aumentado o padding para aumentar a altura da caixa */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Largura do formulário de login */
+    margin-top: 50px; /* Aumentado o espaço entre o cabeçalho e a caixa de login */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #005f99; /* Cor do texto do título azul escuro */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%; /* Faz os campos de entrada ocupar toda a largura do contêiner */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #005f99; /* Cor da borda quando em foco azul escuro */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    width: 100%; /* Faz o botão ocupar toda a largura do contêiner */
+    padding: 10px;
+    background-color: #007acc; /* Cor do botão azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave para a cor do fundo */
+}
+
+button:hover {
+    background-color: #005f99; /* Cor do botão ao passar o mouse azul escuro */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666; /* Cor do texto do rodapé */
+}

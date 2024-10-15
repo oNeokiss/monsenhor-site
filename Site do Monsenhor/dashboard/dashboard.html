@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nome do App</h1>
+        <div class="user-info">
+            <span id="user-name">Leonardo Santos Carmona</span>
+            <img src="sair.png" alt="Logout" id="logout-icon" />
+        </div>
+    </header>
+    <main>
+        <section class="school-info">
+            <div class="school-photo">
+                <img src="monsenhor.jpg" alt="Foto da Escola" />
+            </div>
+            <div class="school-details">
+                <h2>MONSENHOR GONÇALVES</h2>
+                <p><strong>Endereço:</strong>  R. Dr. Presciliano Pinto, 940 - Boa Vista, São José do Rio Preto</p>
+                <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, 7h às 18h</p>
+                <p><strong>Telefone:</strong> (17) 3235-2435</p>
+                <div class="map">
+                    <h3>Localização:</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.6089141925218!2d-49.388544287846415!3d-20.807103966142336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad69d97723e5%3A0x5c527bb23d3f8bf7!2sE.%20E.%20Monsenhor%20Gon%C3%A7alves!5e0!3m2!1spt-BR!2sbr!4v1728950126330!5m2!1spt-BR!2sbr"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <h2>Selecione uma opção:</h2>
+        
+        <!-- Faixa de destaque para as opções -->
+        <div class="options-highlight">
+            <div class="carousel-background"> <!-- Novo contêiner para a faixa -->
+                <div class="carousel-container">
+                
+                    <div class="carousel">
+                        <div class="menu-item">
+                            <img src="minha-sala.png" alt="Minha Sala De Aula" class="menu-icon" />
+                            <span>Minha Sala De Aula</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="prova.png" alt="Provas" class="menu-icon" />
+                            <span>Provas</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="relogio.png" alt="Horário de Aula" class="menu-icon" />
+                            <span>Horário de Aula</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="zanota.png" alt="Anotações do Aluno" class="menu-icon" />
+                            <span>Anotações do Aluno</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="frequencia.png" alt="Frequência" class="menu-icon" />
+                            <span>Frequência</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="calendario.png" alt="Calendário" class="menu-icon" />
+                            <span>Calendário</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="boletim.png" alt="Boletim" class="menu-icon" />
+                            <span>Boletim</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="cardapio.png" alt="Cardápio da Merenda" class="menu-icon" />
+                            <span>Cardápio da Merenda</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="feedback.png" alt="Feedback" class="menu-icon" />
+                            <span>Feedback</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="aviso.png" alt="Avisos da Direção" class="menu-icon" />
+                            <span>Avisos da Direção</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Inova Education. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modal para confirmar logout -->
+    <div id="logout-modal" class="modal">
+        <div class="modal-content">
+            <p>Tem certeza que deseja deslogar?</p>
+            <button id="confirm-logout">Sim</button>
+            <button id="cancel-logout">Cancelar</button>
+        </div>
+    </div>
+</body>
+</html>

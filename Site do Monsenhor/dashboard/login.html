@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="login-style.css"> <!-- Estilos da tela de login -->
+</head>
+<body>
+    <header>
+        <h1>Login da Escola</h1>
+    </header>
+    <main>
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="RA">RA com Dígito:</label>
+            <input type="text" id="RA" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+            
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Escola XYZ. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            const username = document.getElementById('RA').value;
+            const password = document.getElementById('password').value;
+
+            // Aqui você pode alterar o usuário e a senha
+            if (username === "1090262462" && password === "Monsenhor123#") {
+                window.location.href = "dashboard.html"; // Redireciona para o dashboard após o login
+            } else {
+                alert("RA ou senha incorretos.");
+            }
+        });
+    </script>
+</body>
+</html>
+
+
